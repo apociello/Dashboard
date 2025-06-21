@@ -1,12 +1,24 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -16,7 +28,40 @@ body {
 }
 
 .sidebar {
-    background-color: #1DA1F2;
+    background-color: rgb(25, 145, 210);
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.logo-icon {
+    width: 2.5rem;
+    fill: white;
+}
+
+.nav-icon {
+    width: 1.2rem;
+    fill: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.sidebar ul li a {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 1rem;
+    text-decoration: none;
     color: white;
 }
 
@@ -60,4 +105,3 @@ body {
     padding: 1rem;
     display: flex;
 }
-
