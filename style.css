@@ -124,7 +124,7 @@ article.project p {
     width: 1.2rem;
 }
 .right-sidebar {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem 3rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -144,4 +144,29 @@ article.project p {
 .bottom {
     padding: 1rem;
     display: flex;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 6px;
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.announcements::before {
+    content: 'Announcements';
+    position: absolute;
+    top: -30px;
+    left: 3px;
+    font-size: 1.2rem;
+}
+
+.announcements p {
+    font-size: 0.70rem;
+    color: #666;
+    margin-top: 0.1rem;
+}
+
+.announcements div {
+    margin: 1.3rem 0;
 }
