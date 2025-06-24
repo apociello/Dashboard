@@ -65,6 +65,10 @@ body {
     color: white;
 }
 
+.sidebar ul li a:hover {
+    color: #ddd;
+}
+
 .content {
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -122,6 +126,12 @@ article.project p {
 }
 .art-option {
     width: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.art-option:hover,
+.top-icon:hover {
+    transform: scale(1.2);
 }
 .right-sidebar {
     padding: 3rem 2rem 2rem 1rem;
@@ -159,6 +169,11 @@ article.project p {
     height: 1.5rem;
 }
 
+.top input:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 .top img {
     width: 40px;
     height: 40px;
@@ -177,6 +192,7 @@ article.project p {
 
 .top-icon {
     width: 1.5rem;
+    transition: transform 0.2s ease;
 }
 
 .bottom {
@@ -205,6 +221,10 @@ img.bottom-avatar {
     padding: 0.5rem 1rem;
     border-radius: 50px;
     border: none;
+}
+
+button:hover {
+    background-color: #0b6fad;
 }
 
 
