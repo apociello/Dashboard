@@ -77,7 +77,7 @@ body {
 }
 
 .projects {
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1rem 2rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
@@ -142,9 +142,33 @@ article.project p {
 }
 
 .bottom {
-    padding: 1rem;
+    padding: 0rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem;
 }
+
+img.bottom-avatar {
+    width: 55px;
+    height: 55px;
+}
+
+.buttons {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.buttons button {
+    font-size: 0.9rem;
+    background-color: rgb(25, 145, 210);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: none;
+}
+
 
 .announcements {
     background-color: white;
@@ -195,13 +219,16 @@ article.project p {
     
 }
 
-.avatar {
+.avatar,
+.bottom-avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 60%;
 }
+
+
 
 .account {
     display: flex;
