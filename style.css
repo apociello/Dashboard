@@ -1,4 +1,4 @@
-/* roboto-regular - latin */
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto';
@@ -6,7 +6,6 @@
   font-weight: 400;
   src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 * {
   margin: 0;
@@ -74,72 +73,6 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
-.main-content {
-    background-color: hsl(214, 32%, 91%);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.projects {
-    padding: 3rem 1rem 2rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.projects article.project:first-of-type{
-    position: relative;
-}
-
-.projects article.project:first-of-type::before {
-    content: 'Your Projects';
-    position: absolute;
-    top: -30px;
-    left: -5px;
-   font-size: 1.2rem;
-}
-
-article.project {
-    background-color: white;
-    border-radius: 5px;
-    padding: 1.5rem 1rem 0.5rem;
-    border-left: 8px solid hsl(42, 87%, 55%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-article.project p {
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 0.3rem;
-}
-
-.art-options {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-
-.art-options a {
-    text-decoration: none;
-}
-.art-option {
-    width: 1.2rem;
-    transition: transform 0.2s ease;
-}
-
-.art-option:hover,
-.top-icon:hover {
-    transform: scale(1.2);
-}
-.right-sidebar {
-    padding: 3rem 2rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -179,15 +112,6 @@ article.project p {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.top img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 60%;
-    
-}
-
 .top-right {
     display: flex;
     gap: 1rem;
@@ -198,6 +122,15 @@ article.project p {
 .top-icon {
     width: 1.5rem;
     transition: transform 0.2s ease;
+}
+
+.top img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 60%;
+    
 }
 
 .bottom {
@@ -219,7 +152,7 @@ img.bottom-avatar {
     margin-right: 1.5rem;
 }
 
-.buttons button {
+button {
     font-size: 0.9rem;
     background-color: rgb(25, 145, 210);
     color: white;
@@ -232,6 +165,69 @@ button:hover {
     background-color: #0b6fad;
 }
 
+.main-content {
+    background-color: hsl(214, 32%, 91%);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    padding: 3rem 1rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project:first-of-type{
+    position: relative;
+}
+
+.project:first-of-type::before {
+    content: 'Your Projects';
+    position: absolute;
+    top: -30px;
+    left: -5px;
+   font-size: 1.2rem;
+}
+
+.project {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.5rem 1rem 0.5rem;
+    border-left: 8px solid hsl(42, 87%, 55%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.art-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.art-icon {
+    width: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.art-icon:hover,
+.top-icon:hover {
+    transform: scale(1.2);
+}
+
+.right-sidebar {
+    padding: 3rem 2rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .announcements {
     background-color: white;
@@ -248,14 +244,14 @@ button:hover {
     font-size: 1.2rem;
 }
 
+.announcements div {
+    margin: 1.3rem 0;
+}
+
 .announcements p {
     font-size: 0.70rem;
     color: #666;
     margin-top: 0.1rem;
-}
-
-.announcements div {
-    margin: 1.3rem 0;
 }
 
 .trending {
@@ -276,10 +272,10 @@ button:hover {
     font-size: 1.2rem;
 }
 
-.trending p {
-    font-size: 0.8rem;
-    color: #666;
-    
+.account {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .avatar,
@@ -291,10 +287,7 @@ button:hover {
   object-position: center 60%;
 }
 
-
-
-.account {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.trending p {
+    font-size: 0.8rem;
+    color: #666;
 }
