@@ -149,7 +149,6 @@ article.project p {
 .top {
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -157,12 +156,18 @@ article.project p {
     display: flex;
     gap: 0.5rem;
     margin-left: 2rem;
+    flex: 1;
+}
+
+.top form {
+    flex: 1;
 }
 
 .top input {
     font-size: 1rem;
     padding: 0.5rem;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     border-radius: 20px;
     border: none;
     background-color: hsl(214, 32%, 91%);
