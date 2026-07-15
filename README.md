@@ -1,2 +1,14 @@
-# Dashboard
-This is an Admin Dashboard made with HTML and CSS
+# Admin Dashboard
+
+A dashboard interface built with CSS Grid.
+
+🔗 [Live Demo](https://apociello.github.io/Dashboard/)
+
+## Screenshot
+
+![Admin Dashboard interface](./images/dashboard.png)
+
+## Built with
+
+- HTML
+- CSS
